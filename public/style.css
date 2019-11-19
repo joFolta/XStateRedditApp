@@ -1,0 +1,47 @@
+body {
+    background-color: whitesmoke;
+}
+
+.todo-list {
+    background-color: white;
+    margin: auto;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid spacegray;
+    box-shadow:
+    /* The top layer shadow */
+        0 1px 1px black,
+            /* The second layer */
+        0 10px 0 -5px lightgray,
+            /* The second layer shadow */
+        0 10px 1px -4px black,
+            /* The third layer */
+        0 20px 0 -10px gray,
+            /* The third layer shadow */
+        0 20px 1px -9px black;
+    padding: 25px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px 0;
+    width: 70%;
+    border-bottom: 1px solid lightgray;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #black;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+}
