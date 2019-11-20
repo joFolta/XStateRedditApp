@@ -2,9 +2,6 @@ import { Machine, assign } from "xstate";
 
 function invokeFetchSubreddit(context) {
   const { subreddit } = context;
-
-  let jsonresp;
-
   return fetch(`https://www.reddit.com/r/${subreddit}.json`)
     .then(response => response.json())
     .then(json => json.data.children.map(child => child.data));
